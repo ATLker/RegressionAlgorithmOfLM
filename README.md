@@ -1,1 +1,2 @@
 # RegressionAlgorithmOfLM
+python的scipy的curvefit只能拟合有解析式的函数，只好自己写了纯数值的LM算法，一个是C#的一个是Python的，都可以可以拟合任意定义函数。python的暂时还没优化，C#的那个用起来还不错
