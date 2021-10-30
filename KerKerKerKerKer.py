@@ -43,7 +43,7 @@ class RegressionAlgorithm():
             J_LL=np.dot(np.transpose(jacobMatrix),ev)
             dp=np.dot(H_LL,J_LL)
             #暂时更新参数到para_Lm
-            para_Lm=para+list(dp)
+            para_Lm=(np.array(para)+dp).tolist()
             #计算一下新参数误差
             ev_Lm=np.array([y[i]-func(para_Lm,x[i]) for i in range(datalength)])
             error_Lm=np.dot(ev_Lm,ev_Lm)
